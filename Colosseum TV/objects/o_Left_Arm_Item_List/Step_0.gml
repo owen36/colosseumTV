@@ -5,8 +5,7 @@ y = targetPlayer.y;
 
 depth = targetPlayer.depth - 1;
 
-
-if(leftArm != targetPlayer.leftArm)
+if (leftArm != targetPlayer.leftArm)
 {
 	leftArm = targetPlayer.leftArm
 	ChangeLeftArm(leftArm);

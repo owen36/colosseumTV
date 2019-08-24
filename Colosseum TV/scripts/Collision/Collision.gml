@@ -4,7 +4,6 @@ if(hsp == 0)
 if(vsp == 0)
 	vspDecimal = 0;
 
-
 hsp += hspDecimal;
 vsp += vspDecimal
 
@@ -28,7 +27,7 @@ if (t1 != VOID and t1 != PLATFORM or
 	t2 != VOID and t2 != PLATFORM)
 {
 	//collision found
-	if(hsp > 0)
+	if (hsp > 0)
 	{
 		x =	x - (x mod global.tileSize) + global.tileSize - 1 - (side - x);		
 	}
@@ -36,19 +35,15 @@ if (t1 != VOID and t1 != PLATFORM or
 	{
 		x =	x - (x mod global.tileSize) - (side - x);	
 	}
-	hsp = 0;
-	
+	hsp = 0;	
 }
 
-
 x+=hsp;
-
-
 
 // vertical coll
 var side;
 
-if(vsp > 0)
+if (vsp > 0)
 	side = bbox_bottom;
 else
 	side = bbox_top;
@@ -70,9 +65,16 @@ if ((t1 != VOID and (((vsp > 0 or t1 != PLATFORM)) and t3 != PLATFORM) or (t1 ==
 	{
 		y =	y - (y mod global.tileSize) - (side - y);	
 	}
-	vsp = 0;
-	
+	vsp = 0;	
 }
 
+if (t3 == PLATFORM or t4 == PLATFORM)
+{
+	if (down)
+	{
+		show_message("down boy");
+		y =	y - 1;
+	}
+}
 
 y+=vsp;

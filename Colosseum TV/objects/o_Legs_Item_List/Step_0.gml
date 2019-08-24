@@ -5,8 +5,7 @@ y = targetPlayer.y;
 
 depth = targetPlayer.depth - 1;
 
-
-if(legs != targetPlayer.legs)
+if (legs != targetPlayer.legs)
 {
 	legs = targetPlayer.legs
 	ChangeLegs(legs);

@@ -22,8 +22,6 @@ ds_map_add(HeadItems[0], "cooldown", -1);
 ds_map_add(HeadItems[0], "damge", -1);
 ds_map_add(HeadItems[0], "isHuman", true);
 
-
-
 // define sprite
 headSprites[1,0] = Gundam_Head_Idle;
 headSprites[1,1] = Gundam_Head_Walking;
@@ -47,7 +45,6 @@ ds_map_add(HeadItems[1], "health", -1);
 ds_map_add(HeadItems[1], "cooldown", -1);
 ds_map_add(HeadItems[1], "damge", -1);
 ds_map_add(HeadItems[1], "isHuman", true);
-
 
 head = 0;
 targetPlayer = undefined;

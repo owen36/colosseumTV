@@ -28,28 +28,27 @@ o_Camera.follow = o_Player;
 rightArmObj = instance_create_layer(0,0,"Control",o_Right_Arm_Item_List);
 rightArmObj.targetPlayer = thisPlayer;
 rightArm = irandom(1);
-show_message(rightArm);
+//show_message(rightArm);
 
 leftArmObj = instance_create_layer(0,0,"Control",o_Left_Arm_Item_List);
 leftArmObj.targetPlayer = thisPlayer;
 leftArm = irandom(1);
-show_message(leftArm);
+//show_message(leftArm);
 
 bodyObj = instance_create_layer(0,0,"Control",o_Body_Item_List);
 bodyObj.targetPlayer = thisPlayer;
 body = irandom(1);
-show_message(body);
+//show_message(body);
 
 legsObj = instance_create_layer(0,0,"Control",o_Legs_Item_List);
 legsObj.targetPlayer = thisPlayer;
 legs = irandom(1);
-show_message(legs);
+//show_message(legs);
 
 headObj = instance_create_layer(0,0,"Control",o_Head_Item_List);
 headObj.targetPlayer = thisPlayer;
 head = irandom(1);
-show_message(head);
-
+//show_message(head);
 
 // controls innit
 left = 0;

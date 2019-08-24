@@ -5,8 +5,7 @@ y = targetPlayer.y;
 
 depth = targetPlayer.depth - 1;
 
-
-if(head != targetPlayer.head)
+if (head != targetPlayer.head)
 {
 	head = targetPlayer.head
 	ChangeHead(head);

@@ -5,8 +5,7 @@ y = targetPlayer.y;
 
 depth = targetPlayer.depth - 1;
 
-
-if(body != targetPlayer.body)
+if (body != targetPlayer.body)
 {
 	body = targetPlayer.body
 	ChangeBody(body);

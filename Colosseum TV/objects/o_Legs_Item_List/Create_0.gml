@@ -22,8 +22,6 @@ ds_map_add(LegItems[0], "cooldown", -1);
 ds_map_add(LegItems[0], "damge", -1);
 ds_map_add(LegItems[0], "isHuman", true);
 
-
-
 // define sprite
 legSprites[1,0] = Gundam_Legs_Idle;
 legSprites[1,1] = Gundam_Legs_Walking;
@@ -47,7 +45,6 @@ ds_map_add(LegItems[1], "health", -1);
 ds_map_add(LegItems[1], "cooldown", -1);
 ds_map_add(LegItems[1], "damge", -1);
 ds_map_add(LegItems[1], "isHuman", true);
-
 
 legs = 0;
 targetPlayer = undefined;
