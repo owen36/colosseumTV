@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-hsp = 0;
+//if other.owner == self
+//	exit
 
-other.hsp = -hsp ;
+//else
+//show_debug_message("hit other?");

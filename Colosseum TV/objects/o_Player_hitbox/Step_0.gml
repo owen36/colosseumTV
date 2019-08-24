@@ -1,17 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-//with(o_Player)
+//if(o_Player_hitbox.thisPlayer.id != self.id)
 //{
-//	if(distance_to_object(other) < 60)
-//	{
-//		if (other.id != thisPlayer.id && other != self)
-//		{
-//			if(place_meeting(x,y, other))
-//			{
-//				if(!other.hurt)
+//	if(!hurt)
 //				{
-//					other.hurt = true;			
+//					hurt = true;			
 //					var _dir = sign(x - other.x);
 			
 //					if(_dir == 0)
@@ -19,14 +12,14 @@
 				
 //					//knockback
 //					var knockbackDis = 3;
-//					other.hsp = _dir * knockbackDis;				
+//					hsp = _dir * knockbackDis;				
 				
 //					if(OnGround())
-//						other.facingDir = - _dir;				
+//						facingDir = - _dir;				
 				
-//					other.hp -= 1;
+//					hp -= 1;
 			
-//					alarm[HURT] = other.hurtTime
+//					alarm[HURT] = hurtTime
 				
 //					//var _create = true;
 				
@@ -39,24 +32,18 @@
 				
 //					//if(_create)
 //					//{
-//						var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 1, o_Player.leftArmObj.onHitSprite);	
-//						inst.image_xscale = o_Player.facingDir;
+//						var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 1, o_Player_hitbox.thisPlayer.leftArmObj.onHitSprite);	
+//						inst.image_xscale = o_Player_hitbox.thisPlayer.facingDir;
 					
 //						if(hp <= 0)
 //						{
-//							var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 1, o_Player.leftArmObj.onHitSprite);	
-//							inst.image_xscale = o_Player.facingDir;
+//							var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 1, o_Player_hitbox.thisPlayer.leftArmObj.onHitSprite);	
+//							inst.image_xscale = o_Player_hitbox.thisPlayer.facingDir;
 //							inst.sprite_index = s_sword_hit2;		
 //						}								
 //					//}
 //				}		
-//			}
-//		}
-//		else
-//		{
-//			   show_debug_message("hit myself?");
-//		}
-//	}
+	
 //}
 
 
