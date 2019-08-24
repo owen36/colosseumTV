@@ -72,7 +72,7 @@ if ((t1 != VOID and (((vsp > 0 or t1 != PLATFORM)) and t3 != PLATFORM) or (t1 ==
 	}
 	else
 	{
-		o_Player.state = states.Jump;	
+		state = states.Jump;	
 	}
 }
 

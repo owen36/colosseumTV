@@ -33,12 +33,14 @@ if(o_Player_hitbox.thisPlayer.id != self.id)
 		//if(_create)
 		//{
 			var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 4, o_Player_hitbox.thisPlayer.leftArmObj.onHitSprite);	
-			inst.image_xscale = o_Player_hitbox.thisPlayer.facingDir;
+			inst.image_xscale = o_Player_hitbox.thisPlayer.facingDir * 2;
+			inst.image_yscale = 1 * 2;
 					
 			if(hp <= 0)
 			{
 				var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 4, o_Player_hitbox.thisPlayer.leftArmObj.onHitSprite);	
-				inst.image_xscale = o_Player_hitbox.thisPlayer.facingDir;
+				inst.image_xscale = o_Player_hitbox.thisPlayer.facingDir * 2;
+				inst.image_yscale = 1 * 2;
 				inst.sprite_index = s_sword_hit2;		
 			}								
 		//}
