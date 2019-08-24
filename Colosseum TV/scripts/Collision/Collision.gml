@@ -57,24 +57,20 @@ if ((t1 != VOID and (((vsp > 0 or t1 != PLATFORM)) and t3 != PLATFORM) or (t1 ==
 	(t2 != VOID and (((vsp > 0 or t2 != PLATFORM)) and t4 != PLATFORM) or (t2 == SOLID and t4 == PLATFORM)))
 {
 	//collision found
-	if(vsp > 0)
+	if(!down or t2 == SOLID or t1 == SOLID)
 	{
-		y =	y - (y mod global.tileSize) + global.tileSize - 1 - (side - y);		
+		if(vsp > 0)
+		{
+			y =	y - (y mod global.tileSize) + global.tileSize - 1 - (side - y);			
+		}
+		else
+		{
+			y =	y - (y mod global.tileSize) - (side - y);	
+		}
+		
+		vsp = 0;
 	}
-	else
-	{
-		y =	y - (y mod global.tileSize) - (side - y);	
-	}
-	vsp = 0;	
 }
 
-if (t3 == PLATFORM or t4 == PLATFORM)
-{
-	if (down)
-	{
-		show_message("down boy");
-		y =	y - 1;
-	}
-}
 
 y+=vsp;
