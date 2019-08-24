@@ -9,12 +9,14 @@ baseWeaponSprites[0,6] = Gundam_Left_Arm_Idle;
 // weapon stats / defines
 leftArmItems[0] = ds_map_create();
 ds_map_add(leftArmItems[0], "sprite", baseWeaponSprites);
-ds_map_add(leftArmItems[0], "hit_sprite", o_Sword_Hit);
+ds_map_add(leftArmItems[0], "hit_effect", o_Sword_Hit);
 ds_map_add(leftArmItems[0], "hit_box", o_Player_hitbox);
 ds_map_add(leftArmItems[0], "health", -1);
 ds_map_add(leftArmItems[0], "cooldown", -1);
 ds_map_add(leftArmItems[0], "damge", -1);
 ds_map_add(leftArmItems[0], "isHuman", true);
+ds_map_add(leftArmItems[0], "active_hit_frame_start", 2);
+ds_map_add(leftArmItems[0], "active_hit_frame_end", 4);
 
 // define sprite
 baseWeaponSprites[1,0] = Gundam_Left_Arm_Idle1;
@@ -28,12 +30,14 @@ baseWeaponSprites[1,6] = Gundam_Left_Arm_Idle;
 // weapon stats / defines
 leftArmItems[1] = ds_map_create();
 ds_map_add(leftArmItems[1], "sprite", baseWeaponSprites);
-ds_map_add(leftArmItems[1], "hit_sprite", o_Sword_Hit);
+ds_map_add(leftArmItems[1], "hit_effect", o_Sword_Hit);
 ds_map_add(leftArmItems[1], "hit_box", o_Player_hitbox);
 ds_map_add(leftArmItems[1], "health", -1);
 ds_map_add(leftArmItems[1], "cooldown", -1);
 ds_map_add(leftArmItems[1], "damge", -1);
 ds_map_add(leftArmItems[1], "isHuman", true);
+ds_map_add(leftArmItems[1], "active_hit_frame_start", 2);
+ds_map_add(leftArmItems[1], "active_hit_frame_end", 4);
 
 leftArm = 0;
 targetPlayer = undefined;

@@ -25,12 +25,13 @@ if(jump)
 }
 
 //create hitbox
-if(attack)
+if(state == states.Attack)
 {
-	if(image_index >= 1 and image_index<=5)
+	if(image_index >= leftArmObj.activeHitFrameStart and image_index<=leftArmObj.activeHitFrameEnd)
 	{
 		var inst = instance_create_layer(x,y,"Player", leftArmObj.hitBox);
 		inst.image_xscale = facingDir;
+		inst.thisPlayer = self;
 	}
 }
 

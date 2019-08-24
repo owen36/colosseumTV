@@ -4,7 +4,7 @@ if(!thisPlayer.IsController)
 	thisPlayer.left = keyboard_check(ord("A"));
 	thisPlayer.right = keyboard_check(ord("D"));
 	thisPlayer.up = keyboard_check(ord("W"));
-	thisPlayer.down = keyboard_check(vk_shift);
+	thisPlayer.down = keyboard_check(ord("S"));
 	thisPlayer.attackLight = mouse_check_button(mb_left);
 	thisPlayer.attack = mouse_check_button(mb_right);
 	thisPlayer.jump = keyboard_check_pressed(vk_space);
