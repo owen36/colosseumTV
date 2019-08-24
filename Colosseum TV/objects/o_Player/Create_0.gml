@@ -89,13 +89,13 @@ stateArray[states.Hit]			= PlayerHitState;
 stateArray[states.Dash]			= PlayerHitState;
 stateArray[states.AttackLight]	= PlayerAttackState;
 
-maskArray[states.Idle]			= newWalk;
-maskArray[states.Walk]			= newWalk;
-maskArray[states.Jump]			= newWalk;
-maskArray[states.Attack]		= newWalk;
-maskArray[states.Hit]			= newWalk;
-maskArray[states.Dash]			= newWalk;
-maskArray[states.AttackLight]	= newWalk;
+maskArray[states.Idle]			= newIdle;
+maskArray[states.Walk]			= newIdle;
+maskArray[states.Jump]			= newIdle;
+maskArray[states.Attack]		= newIdle;
+maskArray[states.Hit]			= newIdle;
+maskArray[states.Dash]			= newIdle;
+maskArray[states.AttackLight]	= newIdle;
 
 
 //Sprites
