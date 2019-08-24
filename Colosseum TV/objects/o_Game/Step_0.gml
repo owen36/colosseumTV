@@ -12,6 +12,14 @@ if(!playerControllerSpawned)
 			playerControllerSpawned = true;
 		}
 	}
+	
+	// added for debugging without a controller.
+	if(keyboard_check(vk_backspace))
+	{
+		ControllerPlayer = instance_create_layer(460,580,"Player",o_Player);
+		ControllerPlayer.IsController = true;
+		playerControllerSpawned = true;
+	}	
 }
 
 if (!playerKeyboardSpawned)
