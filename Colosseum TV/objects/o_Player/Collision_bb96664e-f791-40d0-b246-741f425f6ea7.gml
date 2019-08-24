@@ -11,11 +11,11 @@ if(o_Player_hitbox.thisPlayer.id != self.id)
 			_dir = 1;
 				
 		//knockback
-		var knockbackDis = 300;
+		var knockbackDis = 3000;
 		hsp = _dir * knockbackDis;				
 				
 		if(OnGround())
-			facingDir = - _dir;				
+			//facingDir = - _dir;				
 				
 		hp -= 1;
 			
@@ -29,7 +29,7 @@ if(o_Player_hitbox.thisPlayer.id != self.id)
 			//with(o_Sword_Hit) if (image_index <= 1)	
 				//_create = false;									
 		//}
-				
+			
 		//if(_create)
 		//{
 			var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 4, o_Player_hitbox.thisPlayer.leftArmObj.onHitSprite);	
@@ -39,7 +39,9 @@ if(o_Player_hitbox.thisPlayer.id != self.id)
 			{
 				var inst = instance_create_depth(x,(bbox_top + bbox_bottom)/2, depth - 4, o_Player_hitbox.thisPlayer.leftArmObj.onHitSprite);	
 				inst.image_xscale = o_Player_hitbox.thisPlayer.facingDir;
-				inst.sprite_index = s_sword_hit2;		
+				inst.sprite_index = s_sword_hit2;	
+				
+				show_debug_message("Player HP <= 0");
 			}								
 		//}
 	}
