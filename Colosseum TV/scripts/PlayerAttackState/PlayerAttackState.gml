@@ -1,6 +1,9 @@
 ////get input
 GetInput();
-
+if(state == states.AttackLight)
+	isLightAttak = true;
+else
+	isLightAttak = false;
 //// calculate movement
 CalculateMovement();
 
@@ -18,10 +21,15 @@ if(image_index >= image_number - sprite_get_speed(sprite_index)/room_speed)
 if(jump)
 {
 	Jumped();
-		if(attack)
-		state = states.Attack;
+	
+	if(image_index <= image_number - sprite_get_speed(sprite_index)/room_speed)
+	{
+		// used to get the correct animation 
+		if(!isLightAttak)
+			state = states.Attack;
 		else
-		state = states.AttackLight;
+			state = states.AttackLight;
+	}
 }
 
 //create hitbox
