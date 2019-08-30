@@ -1,7 +1,7 @@
 bodySprites[0,0] = Gundam_Body_Idle;
 bodySprites[0,1] = Gundam_Body_Walking;
 bodySprites[0,2] = Gundam_Body_Jump;
-bodySprites[0,3] = Gundam_Body_Uppercut;
+bodySprites[0,3] = Gundam_Body_Idle;
 bodySprites[0,4] = Gundam_Hurting_Body;
 bodySprites[0,5] = Gundam_Body_Idle;
 bodySprites[0,6] = Gundam_Body_Idle;
@@ -26,7 +26,7 @@ ds_map_add(BodyItems[0], "isHuman", true);
 bodySprites[1,0] = Gundam_Body_Idle;
 bodySprites[1,1] = Gundam_Body_Walking;
 bodySprites[1,2] = Gundam_Body_Jump;
-bodySprites[1,3] = Gundam_Body_Uppercut;
+bodySprites[1,3] = Gundam_Body_Idle;
 bodySprites[1,4] = Gundam_Hurting_Body;
 bodySprites[1,5] = Gundam_Body_Idle;
 bodySprites[1,6] = Gundam_Body_Idle;

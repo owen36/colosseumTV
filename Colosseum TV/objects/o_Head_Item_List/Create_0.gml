@@ -1,7 +1,7 @@
 headSprites[0,0] = Gundam_Head_Idle;
 headSprites[0,1] = Gundam_Head_Walking;
 headSprites[0,2] = Gundam_Head_Jump;
-headSprites[0,3] = Gundam_Head_Uppercut;
+headSprites[0,3] = Gundam_Head_Idle;
 headSprites[0,4] = Gundam_Hurting_Head;
 headSprites[0,5] = Gundam_Head_Idle;
 headSprites[0,6] = Gundam_Head_Idle;
@@ -26,7 +26,7 @@ ds_map_add(HeadItems[0], "isHuman", true);
 headSprites[1,0] = Gundam_Head_Idle;
 headSprites[1,1] = Gundam_Head_Walking;
 headSprites[1,2] = Gundam_Head_Jump;
-headSprites[1,3] = Gundam_Head_Uppercut;
+headSprites[1,3] = Gundam_Head_Idle;
 headSprites[1,4] = Gundam_Hurting_Head;
 headSprites[1,5] = Gundam_Head_Idle;
 headSprites[1,6] = Gundam_Head_Idle;

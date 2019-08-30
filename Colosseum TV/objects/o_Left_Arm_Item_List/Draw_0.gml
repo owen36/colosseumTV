@@ -10,4 +10,8 @@ if(sprite != -1)
 	image_angle,
 	image_blend,
 	image_alpha);
+	
+	mask_index = sprite[leftArm,targetPlayer.state];
 }
+
+draw_text(x, y, hitPoints);

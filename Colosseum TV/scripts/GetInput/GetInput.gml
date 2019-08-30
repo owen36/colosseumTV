@@ -14,20 +14,33 @@ if(!thisPlayer.IsController)
 else
 {
 //controller
-var _dev = 0
-if gamepad_is_connected(_dev)
-{
-	var _deadzone = 0.3;
-	thisPlayer.left = gamepad_axis_value(_dev, gp_axislh) < -_deadzone or 0;
-	thisPlayer.right = gamepad_axis_value(_dev, gp_axislh)> _deadzone or 0;
-	thisPlayer.up = gamepad_axis_value(_dev, gp_axislv) <-_deadzone or 0;
-	thisPlayer.down = gamepad_axis_value(_dev, gp_axislv)> _deadzone or 0;
+	var _dev = 0
+	if gamepad_is_connected(_dev)
+	{
+		var _deadzone = 0.3;
+		thisPlayer.left = gamepad_axis_value(_dev, gp_axislh) < -_deadzone or 0;
+		thisPlayer.right = gamepad_axis_value(_dev, gp_axislh)> _deadzone or 0;
+		thisPlayer.up = gamepad_axis_value(_dev, gp_axislv) <-_deadzone or 0;
+		thisPlayer.down = gamepad_axis_value(_dev, gp_axislv)> _deadzone or 0;
 	
-	thisPlayer.attackLight = gamepad_button_check_pressed(_dev, gp_face2) or 0;
-	thisPlayer.attack = gamepad_button_check_pressed(_dev, gp_face3) or 0;
-	thisPlayer.jump = gamepad_button_check_pressed(_dev, gp_face1) or 0;
-	thisPlayer.jumpHeld = gamepad_button_check(_dev, gp_face1) or 0;
-	thisPlayer.block = gamepad_button_check(_dev, gp_shoulderrb) or 0;
+		thisPlayer.attackLight = gamepad_button_check_pressed(_dev, gp_face2) or 0;
+		thisPlayer.attack = gamepad_button_check_pressed(_dev, gp_face3) or 0;
+		thisPlayer.jump = gamepad_button_check_pressed(_dev, gp_face1) or 0;
+		thisPlayer.jumpHeld = gamepad_button_check(_dev, gp_face1) or 0;
+		thisPlayer.block = gamepad_button_check(_dev, gp_shoulderrb) or 0;
 	
-}
+	}
+	else
+	{
+		thisPlayer.left = keyboard_check(vk_left);
+		thisPlayer.right = keyboard_check(vk_right);
+		thisPlayer.up = keyboard_check(vk_up);
+		thisPlayer.down = keyboard_check(vk_down);
+		thisPlayer.attackLight = keyboard_check(vk_control);
+		thisPlayer.attack = keyboard_check(vk_alt);
+		thisPlayer.jump = keyboard_check_pressed(vk_up);
+		thisPlayer.jumpHeld = keyboard_check(vk_up);
+		//thisPlayer.block = mouse_check_button(mb_right);	
+	}
+
 }

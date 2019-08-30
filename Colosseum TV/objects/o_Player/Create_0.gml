@@ -5,7 +5,7 @@ randomize();
 IsController = undefined;
 
 // speeds
-hsp = 0;
+hsp = 1;
 vsp = 0;
 maxHsp = 4;
 walkSpeed = 3;

@@ -1,7 +1,7 @@
 rightWeaponSprites[0,0] = Gundam_Right_Arm_Idle;
 rightWeaponSprites[0,1] = Gundam_Right_Arm_Walking;
 rightWeaponSprites[0,2] = Gundam_Right_Arm_Jump;
-rightWeaponSprites[0,3] = Gundam_Right_Arm_Uppercut;
+rightWeaponSprites[0,3] = Gundam_Right_Arm_Idle;
 rightWeaponSprites[0,4] = Gundam_Hurting_Right_Arm;
 rightWeaponSprites[0,5] = Gundam_Hurting_Right_Arm;
 rightWeaponSprites[0,6] = Gundam_Right_Arm_Punch;
@@ -20,7 +20,7 @@ ds_map_add(RightArmItems[0], "isHuman", true);
 rightWeaponSprites[1,0] = Gundam_Right_Arm_Idle;
 rightWeaponSprites[1,1] = Gundam_Right_Arm_Walking;
 rightWeaponSprites[1,2] = Gundam_Right_Arm_Jump;
-rightWeaponSprites[1,3] = Gundam_Right_Arm_Uppercut;
+rightWeaponSprites[1,3] = Gundam_Right_Arm_Idle;
 rightWeaponSprites[1,4] = Gundam_Hurting_Right_Arm;
 rightWeaponSprites[1,5] = Gundam_Hurting_Right_Arm;
 rightWeaponSprites[1,6] = Gundam_Right_Arm_Punch;

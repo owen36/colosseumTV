@@ -11,3 +11,8 @@ if (leftArm != targetPlayer.leftArm)
 	ChangeLeftArm(leftArm);
 }
 
+if(hitPoints <= 0)
+{
+	targetPlayer.leftArmObj = undefined;
+	instance_destroy();
+}

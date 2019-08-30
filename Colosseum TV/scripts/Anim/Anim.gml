@@ -35,3 +35,20 @@ switch (state)
 		}
 	
 }
+
+// this makes sure our legs get the correct animations while attacking, in air, idle or walking
+if(!OnGround())
+{
+	legsObj.legSprites[legs,3] = legsObj.legSprites[legs,2];
+}
+else if (hsp != 0)
+{
+	legsObj.legSprites[legs,3] = legsObj.legSprites[legs,1];
+}
+else
+{
+	legsObj.legSprites[legs,3] = legsObj.legSprites[legs,0];
+}
+
+
+

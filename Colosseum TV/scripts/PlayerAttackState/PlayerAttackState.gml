@@ -33,13 +33,14 @@ if(jump)
 }
 
 //create hitbox
-if(state == states.Attack)
+if(state == states.Attack and leftArmObj != undefined)
 {
 	if(image_index >= leftArmObj.activeHitFrameStart and image_index<=leftArmObj.activeHitFrameEnd)
 	{
 		var inst = instance_create_layer(x,y,"Player", leftArmObj.hitBox);
 		inst.image_xscale = facingDir;
 		inst.thisPlayer = self;
+		inst.damage = leftArmObj.damage;
 	}
 }
 
